@@ -3,6 +3,9 @@
 
     $('.sidenav').sidenav();
     $('.parallax').parallax();
+    $('.tooltipped').tooltip({
+      position:'top'
+    });
     $('.scrollspy').scrollSpy({
       throttle:50,
       scrollOffset:0
