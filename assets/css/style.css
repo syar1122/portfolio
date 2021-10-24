@@ -1,0 +1,267 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+nav .btn{
+  margin: auto;
+  border-radius: 25px;
+}
+
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+.parallax-container .section {
+  width: 100%;
+}
+
+/*  ********************************** side Nav Styles ************************************  */
+
+nav .side-nav{
+  width: 100%;
+}
+
+/*  ****************************** card Styles *******************************/
+
+.card-icons{
+  font-size: 3rem;
+}
+.card{
+  padding: 0 0 0;
+  height: 15rem;
+}
+
+.card-content{
+  --padding:1.5rem;
+  padding: var(--padding);
+  
+  background: linear-gradient(hsl(0 0% 0% / 0),
+  hsl(0 0% 0% / 0.3) 20% ,
+  hsl(0 0% 0% / 0.9));
+  transform: translateY(12rem);
+  transition: transform 600ms ease-out;
+}
+
+.card:hover .card-content{
+  transform: translateY(-1.2rem);
+}
+
+
+.card .card-title{
+  font-size: 20px;
+  font-weight: bolder;
+  width: max-content;
+  position: relative;
+}
+
+.card-title::after{
+  content: '';
+  position: absolute;
+  left: calc(var(--padding) * -1);
+  bottom: 0;
+  width: calc(100% + var(--padding));
+  height: 4px;
+  background-color: #a7ffeb;
+  transform: scale(0);
+  transform-origin: left;
+  transition: transform 500ms ease;
+}
+
+/* .card:hover{
+  transform:scale(1.05);
+  transition:transform 500ms ease;
+} */
+
+.card:hover .card-title::after{
+  transform: scaleX(1);
+  
+}
+
+/* +++++++++++++++++ tool icons section +++++++++++++++++++*/
+
+.tool-icons{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tool-icons .tool-icon>img{
+  width: 96px;
+  height: 96px;
+}
+
+/*+++++++++++++++++++++++++++++++++ portfolio card designs +++++++++++++++++++++++++++++++++++++ */
+
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.p-card {
+  margin: 30px auto;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 40px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.p-card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.p-card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.p-card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.p-card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+/* +++++++++++++++++++++++++++++++Social icons +++++++++++++++++++++++++++++++++++++++++ */
+
+.socials .button{
+  display: inline-block;
+  overflow: hidden;
+  height: 60px;
+  width: 60px;
+  transition: all 0.3s ease-out;
+  color: #5d4037;
+  background-color: white;
+  border-radius: 50px;
+  margin: 5px 0;
+  cursor: pointer;
+  box-shadow:0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.socials .button:hover{
+  width: 180px;
+}
+
+.socials .button .icon{
+  color: #5d4037;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  box-sizing: border-box;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-out;
+}
+
+.socials .button:nth-child(1):hover .icon{background-color: #ff0000;}
+.socials .button:nth-child(2):hover .icon{background-color: #4267B2;}
+.socials .button:nth-child(3):hover .icon{background-color: #1e1f26;}
+.socials .button:nth-child(4):hover .icon{background-color: #333;}
+
+.socials .button .icon i{
+  font-size: 1.8rem;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.socials .button:hover .icon i{
+  color: #fff;
+}
+
+.socials .button span{
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+}
+
+  
+ 
+
+@media only screen and (max-width : 992px) {
+  /* .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  } */
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
